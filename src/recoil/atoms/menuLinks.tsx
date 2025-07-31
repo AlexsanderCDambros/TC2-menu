@@ -4,12 +4,12 @@ export const menuLinksState = atom({
   key: "menuLinksState",
   default: [
     {
-        label: "Inicio",
-        link: "/inicio"
+      label: "Inicio",
+      link: "/inicio",
     },
     {
-        label: "Transações",
-        link: "/transacoes"
-    }
-  ]
-})
+      label: "Transações",
+      link: "/transacoes",
+    },
+  ],
+});
