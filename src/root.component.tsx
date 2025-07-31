@@ -1,3 +1,12 @@
+import { RecoilRoot } from "recoil";
+import App from "./App";
+
 export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
+  return (
+    <>
+      <RecoilRoot>
+        <App nome={props.name} />
+      </RecoilRoot>
+    </>
+  );
 }
