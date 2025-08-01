@@ -16,15 +16,15 @@ module.exports = (webpackConfigEnv, argv) => {
     // modify the webpack config however you'd like to by adding to this object
     output: {
       path: path.resolve(__dirname, "dist"), // Garante a saída na pasta dist
-      filename: "tc2-menu.js", // Nome do arquivo de saída
+      publicPath: "/",
     },
     plugins: [
       new CopyPlugin({
         patterns: [
           { 
-            from: "_headers", // Arquivo de headers na raiz do projeto
-            to: ".", // Copia para a raiz da pasta de build
-            noErrorOnMissing: true // Não falha se o arquivo não existir
+            from: path.resolve(__dirname, "public/_headers"),
+            to: path.resolve(__dirname, "dist"),
+            force: true  // Sobrescreve se existir
           }
         ]
       })
