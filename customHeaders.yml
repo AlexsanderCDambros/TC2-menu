@@ -1,7 +1,0 @@
-customHeaders:
-  - pattern: '**/*.js'  # Aplica a todos os arquivos JS
-    headers:
-      - key: 'Access-Control-Allow-Origin'
-        value: 'https://main.d3g4jpztn4edyr.amplifyapp.com/'  # Substitua pelo domínio da sua shell
-      - key: 'Access-Control-Allow-Methods'
-        value: 'GET, OPTIONS'
